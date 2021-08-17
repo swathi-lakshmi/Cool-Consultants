@@ -40,11 +40,6 @@ div {
     display: block;
 }
 
-.row {
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
 
 .imgg {
     height: 5em;
@@ -763,9 +758,16 @@ img {
   border-radius: 4em;
   text-align: center;
   height: 30em;
-  margin-left: 30px;
-  margin-right: 30px;
-  height: 32em;
+}
+@media (min-width: 1200px)
+.col-lg-4 {
+    width: 33.33333333%;
+    float: left;
+}
+@media (min-width: 992px)
+.col-md-6 {
+    width: 50%;
+    border-color: white;
 }
 #mu-features .mu-features-area .mu-features-content .mu-single-feature span {
   font-size: 25px;
